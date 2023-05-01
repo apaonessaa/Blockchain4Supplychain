@@ -1,0 +1,71 @@
+test:
+  name: SupplyChain Simulation
+  description: Benchmark for SupplyChain Simulation in Ethereum Local Network 
+  workers:
+    type: local
+    number: 1
+  rounds:
+    - label: Create
+      contractId: SupplyChain
+      txNumber: 100
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 10 }
+      workload:
+        module: benchmarks/workloads/create.js
+        arguments:
+          contractId: SupplyChain
+          contractVersion: 0.0.1
+
+    - label: Order
+      contractId: SupplyChain
+      txNumber: 100
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 10 }
+      workload:
+        module: benchmarks/workloads/order.js
+        arguments:
+          contractId: SupplyChain
+          contractVersion: 0.0.1
+
+    - label: Take 
+      contractId: SupplyChain
+      txNumber: 100
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 10 }
+      workload:
+        module: benchmarks/workloads/take.js
+        arguments:
+          contractId: SupplyChain
+          contractVersion: 0.0.1
+
+    - label: Tracking 
+      contractId: SupplyChain
+      txNumber: 100
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 10 }
+      workload:
+        module: benchmarks/workloads/track.js
+        arguments:
+          contractId: SupplyChain
+          contractVersion: 0.0.1
+
+    - label: Delivered 
+      contractId: SupplyChain
+      txNumber: 100
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 10 }
+      workload:
+        module: benchmarks/workloads/delivered.js
+        arguments:
+          contractId: SupplyChain
+          contractVersion: 0.0.1
+
+
+
+
+

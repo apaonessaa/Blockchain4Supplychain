@@ -1,0 +1,27 @@
+{
+    "caliper": {
+        "blockchain": "ethereum"
+    },
+    "ethereum": {
+        "url": "ws://localhost:8545",
+        "contractDeployerAddress": "0x412D4E849Bb43294cB517A217219AFA354AD42F8",
+        "contractDeployerAddressPrivateKey": "0xa667db2b5230863523c9a14bd63479e1016b85cd928f3e58ef2d068d10013f49",
+        "fromAddress": "0x412D4E849Bb43294cB517A217219AFA354AD42F8",
+        "fromAddressPrivateKey": "0xa667db2b5230863523c9a14bd63479e1016b85cd928f3e58ef2d068d10013f49",
+        "transactionConfirmationBlocks": 1,
+        "contracts": {
+            "SupplyChain": {
+                "estimateGas": true,
+                "path": "src/SupplyChain.json",
+                "gas": {       
+                    "create" : 3000000,
+                    "forsale" : 3000000,
+                    "order" : 3000000,
+                    "take" : 3000000,
+                    "delivered" : 3000000,
+                    "track": 3000000
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,2 @@
+In the config.yaml file you can build a benchmark test using the public methods of smart contract Supplychain. 
+The transactions was builded with workloads scripts.

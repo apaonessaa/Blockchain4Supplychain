@@ -1,0 +1,1 @@
+In ganache.json you must define the public address and private key of account that deploy the smart contract and create the txs
