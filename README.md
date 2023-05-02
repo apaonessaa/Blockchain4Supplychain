@@ -1,5 +1,5 @@
 # supplychain-blockchain
-An environment for the development of a supply chain system based on the use of blockchain technology.
+This is a project for the development and analysis of a supply chain system based on the use of blockchain technology.
 
 An example scheme of the simulated supply chain for the exchange of assets is shown below.
 
@@ -22,7 +22,7 @@ The system includes mechanisms capable of automating the inventory level of ware
 An asset is characterized by the following properties:
 
 - id: represents the identifier of the product in the supply chain and is of type string;
-- volume: represents the volume occupied by the asset and is an atribute linked to the warehouse and carrier inventory level;
+- volume: represents the volume occupied by the asset and is an attribute linked to the warehouse and carrier inventory level;
 - temperatures: attribute in which the last temperature value detected is stored. It is a necessary attribute for goods whose intrinsic value depends on the state of conservation of the product along the supply chain;
 - position: attribute in which the last GPS position in which the asset was detected is stored;
 - price: represents the value in ETH of the asset set by the owner of the asset;
