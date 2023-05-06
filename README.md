@@ -36,19 +36,49 @@ An asset is characterized by the following properties:
 
 # How to use
 
-1. Install npm dependencies defined in package.json file with the command npm install or sudo npm install
-2. Run Ethereum testnet with the command npm run ganache
-3. Deploy Supplychain smart contract with the command truffle migrate
-4. Run a test with truffle test or truffle test --show-events to view the issued events
+1. Install npm dependencies defined in package.json file with the command 
+``` 
+$ npm install 
+```
+
+2. Run Ethereum testnet with the command 
+```
+$ npm run ganache
+```
+
+3. Deploy Supplychain smart contract with the command 
+```
+$ truffle migrate
+```
+
+4. Run a test 
+```
+$ truffle test
+```
+or 
+```
+$ truffle test --show-events 
+```
+to view the issued events
 
 # Simulation
 
 Before you run a simulation, you must to set in caliperWorkspace/networks/ganache.json the pair of public and private keys of the Ethereum address that deploy the smart contract and send the transaction in the local network.
 
-1. Run truffle compile 
-2. Run node scripts/build.js 
-3. Run npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/config.yaml --caliper-networkconfig networks/ganache.json
+1. Compilation of smart contracts
+```
+$ truffle compile 
+```
 
+2. Building ABI of the smart contract 
+```
+$ node scripts/build.js 
+```
+
+3. Run simulation defined in caliperWorkspace/benchmarks/config.yaml
+```
+$ npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/config.yaml --caliper-networkconfig networks/ganache.json
+```
 
 
 
