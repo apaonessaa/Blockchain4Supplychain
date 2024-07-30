@@ -1,4 +1,5 @@
-# supplychain-blockchain
+# An implementation of a system based on blockchain for supply chain use case
+
 This is a project is focused on development and analysis of a supply chain system based on the use of blockchain technology.
 
 An example scheme of the simulated supply chain for the exchange of assets is shown below.
